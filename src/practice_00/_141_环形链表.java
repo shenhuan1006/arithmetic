@@ -1,4 +1,4 @@
-/**
+package practice_00; /**
  * @program: arithmetic
  * @description:
  * @author: shenhuan
