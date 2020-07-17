@@ -1,4 +1,4 @@
-package practice_01; /**
+package practice_02; /**
  * @program: arithmetic
  * @description:
  * @author: shenhuan
@@ -36,48 +36,39 @@ import java.util.Map;
  * 链接：https://leetcode-cn.com/problems/climbing-stairs
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class _70_爬楼梯_1 {
+public class _003_70_爬楼梯_02 {
 
-    private Map<Integer,Integer> map = new HashMap();
-    // 递归的方式
+
+    private Map<Integer, Integer> table = new HashMap<>();
+
     public  int climbStairs(int n) {
-        if (n == 1) {
+        if (n == 1 ){
             return 1;
         }
-        if (n == 2) {
+
+        if (n==2){
             return 2;
         }
-        Integer n1 = map.get(n - 1);
-        Integer n2 = map.get(n - 2);
-        if (n1  == null){
-            n1 = climbStairs(n - 1);
-            map.put(n - 1, n1);
-        }
-        if (n2  == null){
-            n2 = climbStairs(n - 2);
-            map.put(n - 2, n2);
+
+        if (table.get(n) !=null){
+            return table.get(n);
         }
 
+        int sum = climbStairs(n - 2) + climbStairs(n - 1);
+        table.put(n,sum);
+        return sum;
 
-        return n1 + n2;
     }
 
     // 非递归的方式
     public  int climbStairs2(int n) {
-        if (n == 1) {
-            return 1;
-        }
-        if (n == 2) {
-            return 2;
-        }
-
-        int n1 = 1;
-        int n2 = 2;
-        int sum = 0;
-        for (int i = 3; i <= n ; i++) {
-            sum  = n1 + n2;
+        int sum  = 1;
+        int n1 = 0;
+        int n2 = 0;
+        for (int i = 1; i <=n ; i++) {
             n1 = n2;
             n2 = sum;
+            sum = n1 + n2;
         }
         return sum;
     }
