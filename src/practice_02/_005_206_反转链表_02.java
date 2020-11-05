@@ -1,4 +1,4 @@
-package practice_00; /**
+package practice_02; /**
  * @program: arithmetic
  * @description:
  * @author: shenhuan
@@ -20,5 +20,32 @@ package practice_00; /**
  * 链接：https://leetcode-cn.com/problems/reverse-linked-list
  */
 
-public class _206_反转链表 {
+public class _005_206_反转链表_02 {
+
+    //递归
+    public ListNode reverseList1(ListNode head) {
+
+
+
+        if (head.next == null){
+            return head;
+        }
+    }
+
+    //迭代
+    public ListNode reverseList2(ListNode head) {
+
+
+    }
+
+    class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
+    }
 }
+
+
+
+
+

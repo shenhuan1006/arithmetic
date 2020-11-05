@@ -1,4 +1,4 @@
-package practice_01;
+package practice_02;
 
 import java.util.HashMap;
 import java.util.Hashtable;
@@ -10,7 +10,7 @@ import java.util.Map;
  * @author: shenhuan
  * @create: 2019-12-17 10:22
  **/
-public class _1_两数之和_1 {
+public class _000_1_两数之和_2 {
 
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};

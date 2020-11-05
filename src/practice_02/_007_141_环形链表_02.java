@@ -1,12 +1,10 @@
-package practice_01; /**
+package practice_02; /**
  * @program: arithmetic
  * @description:
  * @author: shenhuan
  * @create: 2019-12-19 14:28
  **/
 
-
-import practice_01._24_两两交换链表中的节点_01;
 
 /**
  * 给定一个链表，判断链表中是否有环。
@@ -47,30 +45,10 @@ import practice_01._24_两两交换链表中的节点_01;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
-public class _141_环形链表_01 {
+public class _007_141_环形链表_02 {
 
     public boolean hasCycle(ListNode head) {
-        //1.直接循环，看是否程序在继续跑
 
-
-        //2.快慢指针
-
-        if (head == null || head.next == null) {
-            return false;
-        }
-        ListNode slow = head;
-        ListNode fast = head.next;
-
-        while (slow != fast) {
-            if (fast == null || fast.next == null) {
-                return false;
-            }
-
-            slow = slow.next;
-            fast = fast.next.next;
-
-        }
-        return true;
     }
 
 

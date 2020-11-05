@@ -1,4 +1,4 @@
-package practice_01;
+package practice_02;
 
 /**
  * @program: arithmetic
@@ -36,7 +36,7 @@ import sun.security.x509.NetscapeCertTypeExtension;
  * 链接：https://leetcode-cn.com/problems/rotate-array
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class _189_旋转数组 {
+public class _011_189_旋转数组_02 {
 
 
     public static void main(String[] args) {

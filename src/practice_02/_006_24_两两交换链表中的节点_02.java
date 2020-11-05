@@ -1,4 +1,4 @@
-package practice_01; /**
+package practice_02; /**
  * @program: arithmetic
  * @description:
  * @author: shenhuan
@@ -20,7 +20,7 @@ package practice_01; /**
  * 链接：https://leetcode-cn.com/problems/swap-nodes-in-pairs
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class _24_两两交换链表中的节点_01 {
+public class _006_24_两两交换链表中的节点_02 {
 
 
     public static void main(String[] args) {
@@ -38,36 +38,7 @@ public class _24_两两交换链表中的节点_01 {
 
     public static ListNode swapPairs(ListNode head) {
 
-        // 解法一：直接交换
-        /*ListNode headPre = new ListNode(-1);
-        headPre.next = head;
-        ListNode temp = headPre;
 
-        while (temp.next != null && temp.next.next != null) {
-            ListNode start = temp.next;
-            ListNode end = temp.next.next;
-            temp.next = end;
-            start.next = end.next;
-            end.next = start;
-            temp = start;
-        }
-
-        return headPre.next;*/
-
-        if(head == null || head.next == null){
-            return head;
-        }
-
-        ListNode next = head.next;
-        head.next = swapPairs(next.next);
-        next.next = head;
-
-        return next;
-
-
-        // 解法二：迭代交换
-
-        // 解法三：递归交换
     }
 
 

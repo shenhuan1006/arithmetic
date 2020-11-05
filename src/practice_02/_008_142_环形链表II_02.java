@@ -1,14 +1,9 @@
-package practice_01; /**
+package practice_02; /**
  * @program: arithmetic
  * @description:
  * @author: shenhuan
  * @create: 2019-12-19 14:29
  **/
-
-import practice_01._141_环形链表_01;
-import practice_01._24_两两交换链表中的节点_01;
-
-import java.util.List;
 
 /**
  * 给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
@@ -49,7 +44,7 @@ import java.util.List;
  * 链接：https://leetcode-cn.com/problems/linked-list-cycle-ii
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class _142_环形链表II_01 {
+public class _008_142_环形链表II_02 {
 
 
     public static void main(String[] args) {

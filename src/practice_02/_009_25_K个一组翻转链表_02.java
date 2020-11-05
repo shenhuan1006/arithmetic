@@ -1,12 +1,9 @@
-package practice_01; /**
+package practice_02; /**
  * @program: arithmetic
  * @description:
  * @author: shenhuan
  * @create: 2019-12-19 14:30
  **/
-
-import practice_01._21_合并两个有序链表_1;
-import practice_01._24_两两交换链表中的节点_01;
 
 /**
  * 给你一个链表，每 k 个节点一组进行翻转，请你返回翻转后的链表。
@@ -32,7 +29,7 @@ import practice_01._24_两两交换链表中的节点_01;
  * 链接：https://leetcode-cn.com/problems/reverse-nodes-in-k-group
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class _25_K个一组翻转链表_01 {
+public class _009_25_K个一组翻转链表_02 {
 
 
     public ListNode reverseKGroup(ListNode head, int k) {

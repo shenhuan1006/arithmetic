@@ -1,4 +1,4 @@
-package practice_01; /**
+package practice_02; /**
  * @program: arithmetic
  * @description:
  * @author: shenhuan
@@ -22,7 +22,7 @@ import java.io.IOException;
  */
 
 
-public class _21_合并两个有序链表_1 {
+public class _012_21_合并两个有序链表_02 {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 

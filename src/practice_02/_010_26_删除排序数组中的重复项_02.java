@@ -1,4 +1,4 @@
-package practice_01;
+package practice_02;
 
 /**
  * @program: arithmetic
@@ -28,7 +28,7 @@ package practice_01;
  * 你不需要考虑数组中超出新长度后面的元素。
  * https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
  */
-public class _26_删除排序数组中的重复项_01 {
+public class _010_26_删除排序数组中的重复项_02 {
 
     public int removeDuplicates(int[] nums) {
         if (nums == null || nums.length < 1) {
