@@ -5,6 +5,8 @@ package practice_02; /**
  * @create: 2019-12-19 14:27
  **/
 
+import com.sun.org.apache.regexp.internal.RE;
+
 /**
  * 给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
  *
@@ -37,7 +39,7 @@ public class _006_24_两两交换链表中的节点_02 {
 
 
     public static ListNode swapPairs(ListNode head) {
-
+        return null;
 
     }
 

@@ -6,6 +6,8 @@ package practice_02; /**
  **/
 
 
+import com.sun.org.apache.regexp.internal.RE;
+
 /**
  * 反转一个单链表。
  *
@@ -30,10 +32,12 @@ public class _005_206_反转链表_02 {
         if (head.next == null){
             return head;
         }
+        return null;
     }
 
     //迭代
     public ListNode reverseList2(ListNode head) {
+        return null;
 
 
     }

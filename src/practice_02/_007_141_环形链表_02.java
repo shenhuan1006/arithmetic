@@ -47,9 +47,7 @@ package practice_02; /**
 
 public class _007_141_环形链表_02 {
 
-    public boolean hasCycle(ListNode head) {
 
-    }
 
 
 class ListNode {
