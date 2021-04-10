@@ -1,4 +1,4 @@
-package sort;
+package _01_sort;
 
 
 /**
@@ -10,7 +10,7 @@ public class _01_BubblingSort {
     public static void main(String[] args) {
         int[] nums = {1, 5, 3, 99, 45, 3};
 
-        int[] sortNums = sort1(nums);
+        int[] sortNums = sort(nums);
 
         for (int i = 0; i < sortNums.length; i++) {
             System.out.println(sortNums[i]);
@@ -21,10 +21,10 @@ public class _01_BubblingSort {
         //参数校验 省略
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums.length - i - 1; j++) {
-                if (nums[j] < nums[j + 1]) {
-                    int temp = nums[j + 1];
-                    nums[j + 1] = nums[j];
-                    nums[j] = temp;
+                if (nums[j] > nums[j + 1]) {
+                    int temp = nums[j];
+                    nums[j] = nums[j+1];
+                    nums[j+1] = temp;
                 }
             }
         }
